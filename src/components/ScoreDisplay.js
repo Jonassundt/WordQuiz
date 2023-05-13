@@ -6,10 +6,21 @@ function ScoreDisplay(props) {
     <div>
       {props.isActive ? (
         <div className="scoredisplay-container">
-          <div>
-            Du scoret <b>{props.score}</b> av <b>{props.gameLength}</b> ord
-            riktig.
-          </div>
+          {props.score < 5 ? (
+            <div>
+              <i>
+                Du scoret <b>{props.score}</b> av <b>{props.gameLength}</b> ord
+                riktig... Prøv igjen for å score bedre?
+              </i>
+            </div>
+          ) : (
+            <div>
+              <i>
+                Du scoret faktisk <b>{props.score}</b> av{" "}
+                <b>{props.gameLength}</b> ord riktig! Imponerende!
+              </i>
+            </div>
+          )}
         </div>
       ) : (
         <div></div>
