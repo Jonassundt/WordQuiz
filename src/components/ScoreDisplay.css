@@ -1,0 +1,9 @@
+.scoredisplay-container {
+  border-radius: 5px;
+
+  width: 80%;
+  height: 100%;
+  margin: 3vh auto auto auto;
+  padding: 3vh 1vh 20px 1vh;
+  background-color: #776d6d52;
+}
