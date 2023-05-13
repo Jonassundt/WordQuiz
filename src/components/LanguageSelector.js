@@ -10,10 +10,18 @@ function LanguageSelector(props) {
   let languages = ["german", "spanish", "french"];
   let flags = [germanFlag, spanishFlag, frenchFlag];
   const [language, setLanguage] = useState("german");
+  const [norwLanguage, setNorwLanguage] = useState("tysk");
 
   function handleUpdateLanguage(name) {
     setLanguage(name);
     props.onClick(name);
+    if (name === "german") {
+      setNorwLanguage("tysk");
+    } else if (name === "spanish") {
+      setNorwLanguage("spansk");
+    } else {
+      setNorwLanguage("fransk");
+    }
   }
 
   return (
@@ -29,7 +37,7 @@ function LanguageSelector(props) {
           />
         ))}
       </div>
-      <h3>{language.toUpperCase()}</h3>
+      <h3>{norwLanguage.toUpperCase()}</h3>
     </div>
   );
 }

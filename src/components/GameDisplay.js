@@ -31,7 +31,7 @@ function GameDisplay(props) {
   let currentWord = question[0] || "currentWord";
 
   function postSelection(idx) {
-    console.log(idx);
+    // console.log(idx);
     if (idx === 1) {
       props.postCorrect();
     } else {
@@ -41,7 +41,7 @@ function GameDisplay(props) {
 
   return (
     <div className="game-display">
-      <h3>Language Quiz</h3>
+      <h3>Word Quiz</h3>
       {props.isGameActive ? (
         <div className="option-list">
           <h2 className="current-word">

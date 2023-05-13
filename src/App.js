@@ -1,4 +1,3 @@
-import "./App.css";
 import Progressbar from "./components/Progressbar";
 import LanguageSelector from "./components/LanguageSelector";
 import GameDisplay from "./components/GameDisplay";
@@ -87,7 +86,7 @@ function App() {
     //Checks if game is over
     if (answered >= gameLength - 1) {
       //game over
-      console.log("GAME OVER.");
+      // console.log("GAME OVER.");
       setGameActive(false);
       setScoreDisplayActive(true);
     }

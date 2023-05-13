@@ -7,8 +7,8 @@ function ScoreDisplay(props) {
       {props.isActive ? (
         <div className="scoredisplay-container">
           <div>
-            [You scored <b>{props.score}</b> out of <b>{props.gameLength}</b>{" "}
-            words correctly.]
+            Du scoret <b>{props.score}</b> av <b>{props.gameLength}</b> ord
+            riktig.
           </div>
         </div>
       ) : (
