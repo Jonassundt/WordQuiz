@@ -1,12 +1,11 @@
-import React from "react";
 import { useState } from "react";
 import LanguageFlag from "./LanguageFlag";
 import frenchFlag from "../images/french.jpeg";
 import germanFlag from "../images/german.jpeg";
 import spanishFlag from "../images/spanish.jpeg";
-import "../components/LanguageSelector.css";
 
-function LanguageSelector(props) {
+const LanguageSelector = (props) => {
+
   let languages = ["german", "spanish", "french"];
   let flags = [germanFlag, spanishFlag, frenchFlag];
   const [language, setLanguage] = useState("german");
@@ -26,7 +25,7 @@ function LanguageSelector(props) {
 
   return (
     <div>
-      <div className="language-selector-container">
+      <div className='flags_collection'>
         {languages.map((lang, index) => (
           <LanguageFlag
             key={index}
@@ -37,7 +36,7 @@ function LanguageSelector(props) {
           />
         ))}
       </div>
-      <h3>{norwLanguage.toUpperCase()}</h3>
+      <h3 className='flags_header'>{norwLanguage.toUpperCase()}</h3>
     </div>
   );
 }

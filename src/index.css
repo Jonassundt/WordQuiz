@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 body {
@@ -18,17 +23,14 @@ code {
 }
 
 .main-container {
-  min-height: 100vh;
+  /* border: 1px solid yellow; */
+  /* min-height: 10vh; */
+  max-width:700px;
+  width: 90%;
 }
 
-@media screen and (min-height: 768px) {
-  .main-container {
-    padding-top: 100px;
-  }
-}
 
 .french-bg {
-  /* background: linear-gradient(#0f2027, #203a43, #2c5364); */
   background-image: linear-gradient(rgb(0, 33, 95), rgb(180, 23, 21));
 }
 
@@ -56,8 +58,10 @@ code {
 }
 
 .progressBar-div {
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  /* margin:10px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .language-selector-div {
@@ -69,3 +73,189 @@ code {
   max-width: 700px;
   margin: auto;
 }
+
+.border-red{
+  border: 2px solid red;
+}
+
+.option-selectable{
+  /* border: 2px solid green; */
+}
+
+.button-style{
+  background-color: #0f2027;
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.button-style:hover{
+  background-color: red;
+  cursor: pointer;
+}
+
+
+/* 
+.progress {
+  width: 500px;
+  height: 50px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  background-color: #e0e0e0;
+  color: white;
+}
+
+.bar {
+  flex: 1;
+  height: 100%;
+  background-color: yellow;
+}
+
+.colored {
+  background-color: blue;
+}
+
+.red{
+  background-color: red;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.green{
+  background-color: green;
+} */
+
+.scorebar-progress {
+  /* width: 500px; */
+  height: 50px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+.bar {
+  flex: 1;
+  height: 100%;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.lightgreen{
+  background-color: lightgreen;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.black{ 
+  background-color: rgb(0, 0, 0);
+}
+
+.empty {
+  background-color: #e0e0e0;
+}
+
+.bar-progress {
+  width: 100%;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+
+  /* border-radius: 5px; */
+  display: flex;
+  overflow: hidden;
+  background-color: #414141;
+}
+
+.bar-progress-ux {
+  flex-grow: 0; /* Prevent the bar from growing */
+  flex-shrink: 0; /* Prevent the bar from shrinking */
+  flex-basis: calc(100% / 10);
+  height: 100%;
+  /* margin-right: calc(10% / 9); Set the gap between the bars */
+}
+
+/* Remove the margin from the last bar */
+.bar-progress-ux:last-child {
+  margin-right: 0;
+}
+
+.bar-progress-ux-color {
+  background-color:rgb(147, 147, 147);
+}
+
+.bar-progress-ux-color-main{
+  background-color:#6caaab;
+}
+
+
+/* FLAGS */
+.flagcontainer{
+  border: 1px solid black;
+  border-radius: 10px;
+  /* display:block; */
+}
+
+.flags_collection{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.flag{
+  height: 100%;
+  width:100%;
+  border-radius: 10px;
+
+}
+
+.flag-grayscaled{
+  filter: grayscale(100%);
+}
+
+.flags_header{
+  margin: 3rem;
+}
+
+/* Game display */
+.game-display{
+  /* border: 3px solid black; */
+  height: 300px;
+}
+
+.gameplay-container{
+  width: 80%;
+}
+
+.center-parent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.fullwidth{
+  width: 100%;
+  /* width:1000px; */
+}
+

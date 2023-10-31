@@ -1,5 +1,3 @@
-import React from "react";
-import "./LanguageFlag.css";
 
 function LanguageFlag(props) {
   const key = props.id;
@@ -16,7 +14,7 @@ function LanguageFlag(props) {
       <img
         src={img}
         alt={text}
-        className={selectedLanguage === text ? "flag" : "flag grayscaled"}
+        className={selectedLanguage === text ? "flag" : "flag flag-grayscaled"}
       />
     </div>
   );
